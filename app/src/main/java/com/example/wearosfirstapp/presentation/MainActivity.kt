@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
@@ -101,6 +102,7 @@ private  fun StopWatch(
                 )
 
             }
+            Spacer(modifier = Modifier.width(8.dp))
             Button(
                 onClick = onReset,
                 enabled = state != TimerState.RESET,
